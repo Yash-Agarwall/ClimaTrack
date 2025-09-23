@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 8eb9caf4f0769b953c232776dbc99c
+     36 -->
+    <header>
+        <h1>Weather App</h1>
+        <div class="search">
+            <input type="text" placeholder="Enter city..." id="city">
+            <button class="searchBtn"><span class="material-symbols-outlined">search</span></button>
+            <div class="toggle-unit"><button id="celsiusBtn">°C</button><button id="farBtn">°F</button></div>
+        </div>    
+    </header>
+    <main>
+        <p class="loading-message" style="display:none;">Loading...</p>
+        <section class="current-weather" style="display:none;">
+            <h2>City, country</h2>
+            <p class="date-time">Date</p>
+            <img src="weather-icon.png" alt="Weather icon" id="weather-icon">
+            <h1 class="temp">32°C</h1>
+            <p class="description">Clear Sky</p>
+            <div class="extra-info">
+                <div ><span class="material-symbols-outlined">mist</span><span id="Humidity"></span> Humidity </div>
+                <div ><span class="material-symbols-outlined">air</span><span id="Wind"></span> Wind</div>
+                <div ><span class="material-symbols-outlined">avg_pace</span><span id="Pressure"></span> Pressure</div>
+                <div><span class="material-symbols-outlined">device_thermostat</span><span id="feels"></span> Feels like </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
